@@ -40,7 +40,7 @@
                                 <div class="col-lg-4">
                                     <div class="single-bottom mb-35">
                                         <div class="trend-bottom-img mb-30">
-                                            <img src="{{URL::to($item->post->picture)}}" alt="">
+                                            <img style="object-fit: cover; width: 30em; height: 10em;" src="{{URL::to($item->post->picture)}}" alt="">
                                         </div>
                                         <div class="trend-bottom-cap">
                                             @foreach ($item->post->post_categories as $cat)
@@ -70,7 +70,7 @@
                         @foreach ($right_content as $item)
                         <div class="row trand-right-single d-flex">
                             <div class="mb-2 col-12 trand-right-img">
-                                <img class="col-12" src="{{URL::to($item->picture)}}" alt="">
+                                <img class="col-12" style="object-fit: cover; width: 30em; height: 10em;" src="{{URL::to($item->picture)}}" alt="">
                             </div>
                             <div class="m-2 col-12 trand-right-cap">
                                 @foreach ($item->post_categories as $cat)
@@ -137,7 +137,7 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="{{URL::to($post->post_->picture)}}" alt="">
+                                                    <img style="object-fit: cover; width: 40em; height: 15em;" src="{{URL::to($post->post_->picture)}}" alt="">
                                                 </div>
                                                 <div class="what-cap">
                                                     <span class="ml-2 color{{random_int(1, 4)}}">{{$item->category}}</span>
@@ -169,7 +169,7 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="{{URL::to($post->post_->picture)}}" alt="">
+                                                    <img style="object-fit: cover; width: 40em; height: 15em;" src="{{URL::to($post->post_->picture)}}" alt="">
                                                 </div>
                                                 <div class="what-cap">
                                                     <span class="ml-2 color{{random_int(1, 4)}}">{{$item->category}}</span>

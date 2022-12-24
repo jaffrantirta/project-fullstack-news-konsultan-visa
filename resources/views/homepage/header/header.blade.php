@@ -23,6 +23,7 @@
             <link rel="stylesheet" href="res/assets/css/slick.css">
             <link rel="stylesheet" href="res/assets/css/nice-select.css">
             <link rel="stylesheet" href="res/assets/css/style.css">
+            <script src="https://cdn.tailwindcss.com"></script>
 
             <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
             <script src="jquery.zweatherfeed.min.js" type="text/javascript"></script>
