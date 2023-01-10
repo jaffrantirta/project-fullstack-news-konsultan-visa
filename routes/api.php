@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CountryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,5 +26,8 @@ Route::post('/category/edit', [App\Http\Controllers\CategoriesController::class,
 
 //in-App
 Route::get('/news', [App\Http\Controllers\HomeController::class, 'show_news_in_app']);
+
+//country
+Route::apiResource('country', CountryController::class);
 
 

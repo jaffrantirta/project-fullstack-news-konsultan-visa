@@ -21,7 +21,7 @@ class SystemSetting2 extends Seeder
 
         $save = new Setting();
         $save->name = 'slogan';
-        $save->content = 'Pusat Ngantre Sejagat';
+        $save->content = 'Everyone Can Overseas!';
         $save->save();
     }
 }

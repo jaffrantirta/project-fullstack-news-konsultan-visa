@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
             PermissionSeeder::class,
             SystemSetting2::class,
             SystemSettingLinkPremium::class,
+            CountrySeeder::class
         ]);
     }
 }

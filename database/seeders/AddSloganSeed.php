@@ -16,7 +16,7 @@ class AddSloganSeed extends Seeder
     {
         $save = new Setting();
         $save->name = 'slogan';
-        $save->content = 'Pusat Ngantre Online Sejagat';
+        $save->content = 'Everyone Can Overseas!';
         $save->save();
     }
 }

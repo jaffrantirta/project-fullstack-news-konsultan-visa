@@ -16,12 +16,12 @@ class SystemSettingsSeeder extends Seeder
     {
         $save = new Setting();
         $save->name = 'corporate_name';
-        $save->content = 'PT Ngantre Indonesia Persada';
+        $save->content = 'Konsultan Visa';
         $save->save();
 
         $save = new Setting();
         $save->name = 'system_name';
-        $save->content = 'Ngantre';
+        $save->content = 'Konsultan Visa';
         $save->save();
     }
 }
