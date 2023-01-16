@@ -25,7 +25,8 @@ class AdController extends Controller
             'system' => SystemSettings::getAll(),
             'socmed'=>SystemSettings::social_media()
         );
-        return view('administrator.ads', $data);
+        return 'hello';
+        // return view('administrator.ads', $data);
     }
 
     /**
