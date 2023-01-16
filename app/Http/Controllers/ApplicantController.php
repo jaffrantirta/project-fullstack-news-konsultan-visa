@@ -6,6 +6,8 @@ use App\Models\Applicant;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
+use Mail;
+use App\Mail\BroadcastApplicant;
 
 class ApplicantController extends Controller
 {
@@ -62,6 +64,17 @@ class ApplicantController extends Controller
         $save->service = $request->service;
         $save->position = $request->position;
         $save->save();
+
+        Mail::to('franartika@gmail.com')->send(new BroadcastApplicant([
+            'subject' => 'New applicant : '.$request->name.' - '.$request->country.' - '.$request->service.' - '.$request->position,
+            'name' => $request->name,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'cv' => url(Storage::url($path)),
+            'country' => $request->country,
+            'service' => $request->service,
+            'position' => $request->position,
+        ]));
 
         return true;
     }
