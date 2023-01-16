@@ -19,13 +19,10 @@ class CreateApplicantsTable extends Migration
             $table->string('phone');
             $table->string('email');
             $table->string('cv');
-            $table->bigInteger('country_id')->unsigned();
-            $table->bigInteger('servioce_id')->unsigned();
-            $table->bigInteger('position_id')->unsigned();
+            $table->string('country')->nullable();
+            $table->string('service')->nullable();
+            $table->string('position')->nullable();
             $table->timestamps();
-            $table->foreign('country_id')->references('id')->on('countries')->onDelete('cascade');
-            $table->foreign('servioce_id')->references('id')->on('services')->onDelete('cascade');
-            $table->foreign('position_id')->references('id')->on('positions')->onDelete('cascade');
         });
     }
 

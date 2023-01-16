@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Applicant;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Validator;
 
 class ApplicantController extends Controller
 {
@@ -35,7 +37,33 @@ class ApplicantController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $validator = Validator::make($request->all(), [
+            'name' => 'required',
+            'email' => 'required',
+            'phone' => 'required',
+            'country' => 'required',
+            'service' => 'required',
+            'file' => 'required|mimes:pdf|max:2048'
+        ]);
+        if ($validator->fails()) {
+            return response()->json($validator->errors(), 422);
+        }
+
+        $cv = $request->file('file');
+        $path = $cv->store('public');
+
+        $save = new Applicant();
+        $save->name = $request->name;
+        $save->email = $request->email;
+        $save->phone = $request->phone;
+        $save->cv = Storage::url($path);
+        $save->country = $request->name;
+        $save->service = $request->service;
+        $save->position = $request->position;
+        $save->save();
+
+        return true;
     }
 
     /**

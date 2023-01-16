@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CountryController;
+use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\ApplicantController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,5 +31,9 @@ Route::get('/news', [App\Http\Controllers\HomeController::class, 'show_news_in_a
 
 //country
 Route::apiResource('country', CountryController::class);
+
+Route::apiResource('service', ServiceController::class);
+
+Route::apiResource('applicant', ApplicantController::class);
 
 

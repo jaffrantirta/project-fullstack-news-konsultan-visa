@@ -46,7 +46,7 @@ class CountryController extends Controller
      */
     public function show(Country $country)
     {
-        //
+        return Country::where('id', $country->id)->with('positions')->with('services')->get()->first();
     }
 
     /**
