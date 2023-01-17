@@ -4,11 +4,11 @@
     <form action="#" class="main-navbar__search w-100 d-none d-md-flex d-lg-flex">
       <div class="input-group input-group-seamless ml-3">
         <div class="input-group-prepend">
-          <div class="input-group-text">
+          {{-- <div class="input-group-text">
             <i class="fas fa-search"></i>
-          </div>
+          </div> --}}
         </div>
-        <input disabled class="navbar-search form-control" type="text" placeholder="Fitur pencarian dalam pengerjaan" aria-label="Search"> </div>
+        <input disabled class="navbar-search form-control" type="text"  aria-label="Search"> </div>
     </form>
     <ul class="navbar-nav border-left flex-row ">
       <li class="nav-item border-right dropdown notifications">
@@ -19,11 +19,11 @@
           </div>
         </a>
         <div class="dropdown-menu dropdown-menu-small" aria-labelledby="dropdownMenuLink">
-          <a class="dropdown-item" href="#">
+          {{-- <a class="dropdown-item" href="#">
             <div class="notification__content">
               <span class="notification__category">Tidak ada notifikasi saat ini</span>
             </div>
-          </a>
+          </a> --}}
           {{-- <a class="dropdown-item notification__all text-center" href="#"> View all Notifications </a> --}}
         </div>
       </li>
@@ -34,7 +34,7 @@
         </a>
         <div class="dropdown-menu dropdown-menu-small">
           <a class="dropdown-item" href="{{URL::to('admin/profile')}}">
-            <i class="material-icons">&#xE7FD;</i> Profil</a>
+            <i class="material-icons">&#xE7FD;</i> Profile</a>
           <a class="dropdown-item" href="{{URL::to('admin/profile')}}">
             {{-- <i class="material-icons">vertical_split</i> Blog Posts</a> --}}
           <a class="dropdown-item" href="{{URL::to('admin/profile')}}">

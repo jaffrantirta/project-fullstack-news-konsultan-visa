@@ -43,7 +43,7 @@ class BuildingController extends Controller
             }
         }
         $data['page'] = array(
-            'title'=>'Point',
+            'title'=>'Tempat',
             'system' => SystemSettings::getAll(),
             'socmed'=>SystemSettings::social_media()
         );

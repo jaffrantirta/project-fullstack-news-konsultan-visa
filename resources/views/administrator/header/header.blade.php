@@ -148,7 +148,7 @@
               </li>
               @endrole
 
-              @role('Super-Admin')
+              {{-- @role('Super-Admin')
               @if ($title == 'Pengguna')
               <li class="nav-item active">
               @else
@@ -159,22 +159,22 @@
                   <span>Pengguna</span>
                 </a>
               </li>
-              @endrole
+              @endrole --}}
 
               @role('Super-Admin|user-point')
-              @if ($title == 'Point')
+              @if ($title == 'Services')
               <li class="nav-item active">
               @else
               <li class="nav-item">
               @endif
                 <a class="nav-link " href="{{URL::to('/admin/point')}}">
                   <i class="material-icons">pin_drop</i>
-                  <span>Point</span>
+                  <span>Tempat</span>
                 </a>
               </li>
               @endrole
 
-              @role('Super-Admin')
+              {{-- @role('Super-Admin')
               @if ($title == 'Pertanyaan')
               <li class="nav-item active">
               @else
@@ -185,7 +185,7 @@
                   <span>Pertanyaan</span>
                 </a>
               </li>
-              @endrole
+              @endrole --}}
 
               @role('Super-Admin')
               @if ($title == 'Youtube')
@@ -213,7 +213,7 @@
               </li>
               @endrole
 
-              @role('Super-Admin')
+              {{-- @role('Super-Admin')
               @if ($title == 'Premium')
               <li class="nav-item active">
               @else
@@ -224,9 +224,9 @@
                   <span>Premium</span>
                 </a>
               </li>
-              @endrole
+              @endrole --}}
 
-              @role('Super-Admin')
+              {{-- @role('Super-Admin')
               @if ($title == 'Iklan')
               <li class="nav-item active">
               @else
@@ -237,7 +237,7 @@
                   <span>Iklan</span>
                 </a>
               </li>
-              @endrole
+              @endrole --}}
 
               {{-- @if ($title == 'Toilet')
               <li class="nav-item active">

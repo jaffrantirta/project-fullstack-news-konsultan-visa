@@ -19,7 +19,7 @@ class QuestionController extends Controller
      */
     public function index()
     {
-        $data['question'] = Question::where('is_active', true)->orderByRaw('sort', 'DESC')->paginate(5);
+        $data['question'] = Question::where('is_active', true)->orderBy('sort', 'DESC')->paginate(5);
         $data['page'] = array(
             'title'=>'Pertanyaan',
             'system' => SystemSettings::getAll(),

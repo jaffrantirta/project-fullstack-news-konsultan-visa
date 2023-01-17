@@ -26,7 +26,7 @@
                          </div>
                      </div>
                  </div>
-                 <div class="col-md-6 col-12">
+                 {{-- <div class="col-md-6 col-12">
                      <div class="single-footer-caption mt-60">
                          <div class="footer-tittle">
                              <h4>Langganan berita GRATIS</h4>
@@ -46,7 +46,7 @@
                              </div>
                          </div>
                      </div>
-                 </div>
+                 </div> --}}
                  {{-- <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6">
                      <div class="single-footer-caption mb-50 mt-60">
                          <div class="footer-tittle">

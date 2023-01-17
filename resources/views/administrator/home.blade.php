@@ -2,13 +2,10 @@
         <!-- End Main Sidebar -->
         <main class="main-content col-lg-10 col-md-9 col-sm-12 p-0 offset-lg-2 offset-md-3">
           <div class="main-navbar sticky-top bg-white">
-
             @include('administrator.navbar.navbar')
-
           </div>
-          <!-- / .main-navbar -->
+
           <div class="main-content-container container-fluid px-4">
-            <!-- Page Header -->
             <div class="page-header row no-gutters py-4">
               <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
                 <span class="text-uppercase page-subtitle">Dashboard</span>
@@ -16,7 +13,7 @@
               </div>
             </div>
 
-            @role('user-point')
+            {{-- @role('user-point')
             <div class="row">
               <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
 
@@ -93,7 +90,7 @@
                 @endforeach
               @endif
             </div>
-            @endrole
+            @endrole --}}
 
 
             @role('Super-Admin')
@@ -124,10 +121,10 @@
                 </div>
               </div>
               
-              <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
+              {{-- <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
                 <div class="card card-small">
                   <div class="card-header border-bottom">
-                    <h6 class="m-0">Top 5 Toilet</h6>
+                    <h6 class="m-0">Top 5</h6>
                   </div>
                   <div class="card-body p-0">
                     <ul class="list-group list-group-small list-group-flush">
@@ -140,13 +137,13 @@
                     </ul>
                   </div>
                 </div>
-              </div>
+              </div> --}}
 
               @endrole
 
               @role('Super-Admin|writer')
               
-              <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
+              <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
                 <div class="card card-small">
                   <div class="card-header border-bottom">
                     <h6 class="m-0">Top 5 News</h6>

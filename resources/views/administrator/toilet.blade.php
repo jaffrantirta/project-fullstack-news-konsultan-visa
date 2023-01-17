@@ -11,7 +11,7 @@
             <div class="page-header row no-gutters py-4">
               <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
                 <span class="text-uppercase page-subtitle">Toilet</span>
-                <h3 class="page-title">List Data Toilet {{ $building->name }}</h3>
+                <h3 class="page-title">List layanan {{ $building->name }}</h3>
               </div>
             </div>
 
@@ -42,7 +42,7 @@
                 <div class="col">
                   <div class="card card-small mb-4 table-responsive">
                     <div class="card-header border-bottom">
-                      <h6 class="m-0">{{$toilet->total()}} Toilet Aktif</h6>
+                      {{-- <h6 class="m-0">{{$toilet->total()}} Toilet Aktif</h6> --}}
                     </div>
                     <div class="card-body p-0 pb-3 text-center">
                       <table class="table mb-0">
