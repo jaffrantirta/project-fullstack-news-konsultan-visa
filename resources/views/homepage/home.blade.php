@@ -279,8 +279,8 @@
                             <div class="top-caption">
                             </div>
                             <div class="bottom-caption">
-                                <h2>Mengenal Konsultan Visa</h2>
-                                <p>Irure reprehenderit consectetur ut dolor nulla nisi qui est officia id ullamco nostrud deserunt aliquip. Esse nisi nulla sunt anim minim esse Lorem sint ipsum consectetur non dolore. Amet est cupidatat occaecat aute velit laborum non esse quis quis labore duis consequat ea.</a></p>
+                                <h2>Konsultan Visa</h2>
+                                <p>KONSULTAN VISA is a Visa processing service business to various countries. As a consultant, we will listen, serve & provide the right solution to Visa problems and assist to apply the most appropriate Visa for you. KONSULTAN VISA provides complete services for study, visitor, internship, work & holiday visas and other types of visas to various countries. We are working with government and private schools in several countries.</a></p>
                             </div>
                         </div>
                     </div>
