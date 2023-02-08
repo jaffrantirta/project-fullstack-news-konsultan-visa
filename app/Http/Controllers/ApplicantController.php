@@ -65,7 +65,7 @@ class ApplicantController extends Controller
         $save->position = $request->position;
         $save->save();
 
-        Mail::to('jaffrantirta@icloud.com')->send(new BroadcastApplicant([
+        Mail::to('admin@konsultanvisa.com')->send(new BroadcastApplicant([
             'subject' => 'New applicant : '.$request->name.' - '.$request->country.' - '.$request->service.' - '.$request->position,
             'name' => $request->name,
             'email' => $request->email,
