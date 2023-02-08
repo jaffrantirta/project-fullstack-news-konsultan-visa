@@ -29,7 +29,7 @@ class BroadcastApplicant extends Mailable
      */
     public function build()
     {
-        return $this->from('no-reply@konsultanvisa.com')->subject($this->data['subject'])->markdown('emails.broadcast')->with([
+        return $this->from('apply@konsultanvisa.com')->subject($this->data['subject'])->markdown('emails.broadcast')->with([
             'data' => $this->data
         ]);
     }

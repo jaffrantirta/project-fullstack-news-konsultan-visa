@@ -60,12 +60,12 @@ class ApplicantController extends Controller
         $save->email = $request->email;
         $save->phone = $request->phone;
         $save->cv = Storage::url($path);
-        $save->country = $request->name;
+        $save->country = $request->country;
         $save->service = $request->service;
         $save->position = $request->position;
         $save->save();
 
-        Mail::to('franartika@gmail.com')->send(new BroadcastApplicant([
+        Mail::to('jaffrantirta@icloud.com')->send(new BroadcastApplicant([
             'subject' => 'New applicant : '.$request->name.' - '.$request->country.' - '.$request->service.' - '.$request->position,
             'name' => $request->name,
             'email' => $request->email,
